@@ -16,9 +16,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func experiment(){
-        //goes to photos
-        let nextController = UIImagePickerController()
-        self.present(nextController, animated: true, completion: nil)
+//        //goes to photos
+//        let nextController = UIImagePickerController()
+//        self.present(nextController, animated: true, completion: nil)
+        
+        //goes to share with others
+        let image = UIImage()
+        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        self.present(controller, animated: true, completion: nil)
     }
 
 }

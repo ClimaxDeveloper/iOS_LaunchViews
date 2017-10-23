@@ -20,10 +20,19 @@ class ViewController: UIViewController {
 //        let nextController = UIImagePickerController()
 //        self.present(nextController, animated: true, completion: nil)
         
-        //goes to share with others
-        let image = UIImage()
-        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+//        //goes to share with others
+//        let image = UIImage()
+//        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+//        self.present(controller, animated: true, completion: nil)
+        
+        //makes an alert pop up
+        let controller = UIAlertController()
+        controller.title = "Test Alert"
+        controller.message = "This is a test"
+        let okAction = UIAlertAction(title: "Fuck off", style: UIAlertActionStyle.default)
+        controller.addAction(okAction)
         self.present(controller, animated: true, completion: nil)
+
     }
 
 }
